@@ -74,39 +74,56 @@ img {
 /* MODIFICHE MIE - INIZIO CSS MEDIA QUERY */
 @media screen and (max-width: 420px) {
 
-  /* BLOCCO LEZIONI */
+  /* CMQ BLOCCO LEZIONI */
   .row {
     width: 100%;
     margin: 0;
+
   }
 
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%;
     float: none;
+
   }
-  #lezioni .row img {
-    float: none;
-    border: 1px solid orange;
-    margin: 0;
-  }
+
 
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
     width: 100%;
   }
+  /* CMQ BLOCCO STEPS */
 
-  /* BLOCCO PERCHE */
+  .central img, .right img {
+    margin-top: 15px;
+  }
+
+  /* CMQ BLOCCO PERCHE */
 
   #why .row img {
     background-color: #428bca;
     border-radius: 50%;
     padding: 0px;
     max-width: 100%;
+    margin: 0 5%;
+
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 15px;
   }
 
   img {
     max-width: 100%;
-    height: auto;
+    max-height: 150px;
   }
+
+
+}
+
+@media screen and (max-width: 420px)
